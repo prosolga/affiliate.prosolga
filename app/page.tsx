@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowDown, ArrowUpRight, ChevronDown, Globe2, Menu, ShieldCheck, Zap, X } from 'lucide-react'
 import { useState } from 'react'
+import { faqs } from '@/lib/site'
 
 const platforms = [
   {
@@ -50,15 +51,6 @@ const steps = [
   ['Get matched & paid', 'Start on projects under the platform’s terms.'],
 ]
 
-const faqs = [
-  ['Does ProSolutions hire me or guarantee work?', 'No. ProSolutions is an independent referral partner. Hiring decisions, project availability, pay rates and contracts are controlled entirely by each platform.'],
-  ['Does it cost anything to apply through this page?', 'No. You never pay ProSolutions or the platforms to apply. Be cautious of anyone who asks you to pay for access.'],
-  ['Why use your link instead of going directly?', 'Our links are referral links. If you are accepted and meet a platform’s conditions, ProSolutions may receive a reward at no extra cost to you.'],
-  ['Can I apply to more than one platform?', 'Generally yes. Many contributors register on several platforms, subject to each platform’s own terms.'],
-  ['How much can I earn?', 'It depends on the platform, project, your skills and availability. We do not promise or estimate earnings; rates are shown by the platform.'],
-  ['Is work available in my country?', 'Availability changes by project and region. Platforms may open, pause or close projects at any time.'],
-]
-
 export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -67,7 +59,7 @@ export default function Page() {
       <header className="sticky top-0 z-20 border-b border-[#e7ebf2] bg-white/95 text-[#12213f] shadow-[0_10px_30px_-24px_rgba(11,31,75,0.55)] backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a href="#top" className="flex items-center gap-3" aria-label="ProSolutions home">
-            <img src="/logo.png" alt="ProSolutions Global Advisory" className="h-16 w-auto object-contain" />
+            <img src="/logo.png" alt="ProSolutions Global Advisory" width={632} height={395} fetchPriority="high" className="h-16 w-auto object-contain" />
           </a>
           <nav className="hidden items-center gap-7 text-sm text-[#5e6a7f] md:flex">
             <a href="#tracks" className="font-semibold transition hover:text-[hsl(350_80%_50%)]">Opportunities</a><a href="#how-it-works" className="font-semibold transition hover:text-[hsl(350_80%_50%)]">How it works</a><a href="#faq" className="font-semibold transition hover:text-[hsl(350_80%_50%)]">FAQ</a>
