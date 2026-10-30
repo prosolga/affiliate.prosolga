@@ -17,7 +17,7 @@ const platforms = [
     type: 'Flexible, project-based, remote',
     pay: 'Hourly in USD; varies by project and skill',
     accent: 'bg-[#eef3ff] text-[#3156b8]',
-    href: 'https://app.outlier.ai/expert/referrals/link/_QneZXP03Gq4_br1a4WY8msurJM',
+    href: 'https://app.outlier.ai/expert/referrals/link/UGDp8U_Sbk3Pq4lO5iirLGEgJD0',
   },
   {
     number: '02',
